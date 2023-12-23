@@ -11,6 +11,9 @@ function main(){
     if (codeNumber == "*127#") {
         adeegaAnfac()
     }
+    else if(codeNumber == null){
+        
+    }
     else if(codeNumber == ""){
         alert('Input required.Try again. ')
     }
