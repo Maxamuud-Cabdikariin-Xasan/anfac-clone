@@ -139,6 +139,9 @@ function anfacparts()
                 else if(permisionDialog == "1"){
                     alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                 }
+                else if(permisionDialog == null){
+        
+                }
                  
                 
                 else {
@@ -166,6 +169,9 @@ function anfacparts()
                 else if(permisionDialog == "1"){
                     alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                 }
+                else if(permisionDialog == null){
+        
+                }
                 else {
                     alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
                 }
@@ -190,6 +196,9 @@ function anfacparts()
                 else if(permisionDialog == "1"){
                     alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                 }
+                else if(permisionDialog == null){
+
+                }
                 else {
                     alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
                 }
@@ -201,6 +210,9 @@ function anfacparts()
             else if(xirmooyinkaAnfac == ""){
                 alert('Input Required.Try again. ');
                 }
+            else if(xirmooyinkaAnfac == null){
+        
+            }
             else{
                 while(xirmooyinkaAnfac !='0' || xirmooyinkaAnfac !='1' || xirmooyinkaAnfac !='2' || xirmooyinkaAnfac !='3' || xirmooyinkaAnfac !='4' || xirmooyinkaAnfac !='0'){
                     xirmooyinkaAnfac = prompt("Sorry, unknown command"); 
@@ -265,13 +277,16 @@ function anfacparts()
                     wadamo();
                     function wadamo()
                     {
-                        let permisionDialog = prompt(`1. Wadamada qeybta 1aad\n2. Wadamada qeybta 2aad\n3. Wadamada qeybta 3aad\n4. Wadamada qeybta 4aad\n5. Wadamada qeybta 5aad\n6. Wadamada qeybta 6aad\n0. Back`);
+                        let permisionDialog = prompt(`1. Wadamada qeybta 1aad\n2. Wadamada qeybta 2aad\n3. Wadamada qeybta 3aad\n4. Wadamada qeybta 4aad\n5. Wadamada qeybta 5aad\n0. Back Next:99`);
                         checkCountry()
                         function checkCountry(){
                             if(permisionDialog == "1"){
                                 let country = prompt(`Canada\n USA\n india\n China\n Greece\n Ethiopia\n UAE\n 0.Back`);
                                 if(country == ""){
                                     alert('Input required.Try again. ');  
+                                }
+                                else if(country == null){
+        
                                 }
                                 else if(country == "0"){
                                     wadamo()
@@ -293,9 +308,33 @@ function anfacparts()
                             
             
                             }
+                            else if(permisionDialog == '99'){
+                                permisionDialog = prompt('6. Wadamada qeybta 6aad\n0.Back Pre:88');
+                                if(permisionDialog == '6'){
+                                    checkCountry();
+                                }
+
+                                else if(permisionDialog == '0'){
+                                    xirmo3Menu();
+                                }
+                                else if(permisionDialog == '88'){
+                                    wadamo()
+                                }
+                                else if(permisionDialog == '6'){
+                                    checkCountry();
+
+                                }
+                                else{
+                                    checkCountry();
+                                }
+                                
+                            }
                             else if(permisionDialog == ""){
                                 alert('Input required.Try again. ')
                                 }
+                            else if(permisionDialog == null){
+        
+                            }
 
                             else if(permisionDialog == "2"){
                                 let country = prompt(`Malaysia\n Holand\n Sweden\n Norway\n Kenya\n Pakistan\n 0.Back`);
@@ -304,6 +343,9 @@ function anfacparts()
                                 }
                                 else if(country == "0"){
                                     wadamo()
+                                }
+                                else if(country == null){
+        
                                 }
                                 else if(country != undefined){
                                     while(country != "0"){
@@ -328,12 +370,18 @@ function anfacparts()
                                 else if(country == "0"){
                                     wadamo()
                                 }
+                                else if(country == null){
+        
+                                }
                                 else if(country != undefined) {
                                     while(country != "0"){
                                         country = prompt("sorry, unknown command");
                                         if(country == ""){
                                             alert('Input required.Try again. ');
                                             break;
+                                        }
+                                        else if(country == null){
+        
                                         }
                                         else if(country == "0"){
                                             wadamo();
@@ -351,12 +399,18 @@ function anfacparts()
                                 else if(country == "0"){
                                     wadamo();
                                 }
+                                else if(country == null){
+        
+                                }
                                 else if(country != undefined) {
                                     while(country != "0"){
                                         country = prompt("sorry, unknown command");
                                         if(country == ""){
                                             alert('Input required.Try again. ');
                                             break;
+                                        }
+                                        else if(country == null){
+        
                                         }
                                         else if(country == "0"){
                                             wadamo();
@@ -375,12 +429,18 @@ function anfacparts()
                                 else if(country == "0"){
                                     wadamo()
                                 }
+                                else if(country == null){
+        
+                                }
                                 else if(country != undefined){
                                     while(country != "0"){
                                         country = prompt("sorry, unknown command");
                                         if(country == ""){
                                             alert('Input required.Try again. ');
                                             break;
+                                        }
+                                        else if(country == null){
+        
                                         }
                                         else if(country == "0"){
                                             wadamo();
@@ -399,12 +459,18 @@ function anfacparts()
                                 else if(country == "0"){
                                     wadamo()
                                 }
+                                else if(country == null){
+        
+                                }
                                 else if(country !=  undefined){
                                     while(country != "0"){
                                         country = prompt("sorry, unknown command");
                                         if(country == ""){
                                             alert('Input required.Try again. ');
                                             break;
+                                        }
+                                        else if(country == null){
+        
                                         }
                                         else if(country == "0"){
                                             wadamo();
@@ -425,6 +491,9 @@ function anfacparts()
                                     if(permisionDialog == ""){
                                         alert('Input required.Try again. ');
                                         break;
+                                    }
+                                    else if(permisionDialog == null){
+        
                                     }
                                     else{
                                         checkCountry();
@@ -456,6 +525,9 @@ function anfacparts()
                     else if(permisionDialog == "1"){
                         alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                     }
+                    else if(permisionDialog == null){
+        
+                    }
                     else {
                         alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
                     }
@@ -470,6 +542,9 @@ function anfacparts()
                     else if (permisionDialog == 2 && userBalance >= 20){
                         userBalance -= 20;
                         alert(`Waad ku guuleysatey isdiiwaangelintaada haraagaagu   waa $ ${userBalance}`);
+                    }
+                    else if(permisionDialog == null){
+        
                     }
                     else if(permisionDialog == 2 && userBalance <20){
                        alert(`Haraaga xisaabtaada kuguma filna.`);
@@ -490,6 +565,9 @@ function anfacparts()
                     let permisionDialog = prompt(`Waxaad heleysaa 300 Daqiiqo Dibadda. Fadlan hubi isdiiwaangelintaada:\n1.Maya\n2.Haa`);
                     if(permisionDialog == ""){
                         alert('Input required.Try again. ')
+                    }
+                    else if(permisionDialog == null){
+        
                     }
                     else if (permisionDialog == 2 && userBalance >= 50){
                         userBalance -= 50;
@@ -519,12 +597,19 @@ function anfacparts()
                     if(isNaN(xirmooyinkaAnfac == false)){
                         xirmoanfac2Check();                
                     }
+                    else if(xirmooyinkaAnfac == null){
+        
+                    }
                     else{
                         while(isNaN(xirmooyinkaAnfac)){
                             xirmooyinkaAnfac = prompt("Sorry, unknown command");
                             if(xirmooyinkaAnfac == ""){
                                 alert('Input required.Try again. ');
                                 break;
+                            }
+                            else if(adeegOption == null){
+                                
+        
                             }
                             else{
                                 xirmodibadaCheck();
@@ -561,6 +646,7 @@ function anfacparts()
                         userBalance -= 0.50;
                         alert(`Waad ku guuleysatey isdiiwaangelintaada haraagaagu   waa $ ${userBalance}`);
                     }
+
                     else if(permisionDialog == 2 && userBalance <0.50){
                        alert(`Haraaga xisaabtaada kuguma filna.`);
                    }
@@ -569,6 +655,9 @@ function anfacparts()
                     }
                     else if(permisionDialog == "1"){
                         alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
+                    }
+                    else if(permisionDialog == null){
+        
                     }
                     
     
@@ -593,11 +682,17 @@ function anfacparts()
                     else if(permisionDialog == "1"){
                         alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                     }
+                    else if(permisionDialog == null){
+        
+                    }
                     else {
                         alert("Waan kaxunahay, si khalad ah ayaad u gelisey.");
                     }
     
     
+                }
+                else if(xirmooyinkaAnfac == null){
+        
                 }
                 else if(xirmooyinkaAnfac == '3') {
                     let permisionDialog = prompt(`Waxaad heleysaa 20 SMS Dibadda. fadlan hubi isdiiwaangelintaada: \n1. Maya\n2. Haa`);
@@ -616,6 +711,9 @@ function anfacparts()
                     }
                     else if(permisionDialog == "1"){
                         alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
+                    }
+                    else if(permisionDialog == null){
+        
                     }
                     else {
                         alert("Waan kaxunahay, si khalad ah ayaad u gelisey.");
@@ -637,6 +735,9 @@ function anfacparts()
                         if(xirmooyinkaAnfac == ""){
                             alert('Input required.Try again.');
                             break;
+                            }
+                            else if(xirmooyinkaAnfac == null){
+        
                             }
                             else{
                                 checkAnfacsms();
@@ -660,6 +761,9 @@ function anfacparts()
                 alert('Input required.Try again. ');
                 break;
             }
+            else if(anfacOptions == null){
+        
+            }
             else{
                 checkAnfac();
                 break;
@@ -680,7 +784,7 @@ function anfacparts()
 
 function anfacXirmoyin() 
 {
-    let xirmooyinkaAnfac = prompt(`Fadlan dooro xirmo\n1. Xirmo USD1\n2. Xirmo USD5\n3. Xirmo USD10\n4. Xirmo USD20\n5. Xirmo USD50\n6. Xirmo 90 Sinti\n7. Xirmo 50 Sinti\n8. Xirmo 10 Sinti\n0. Back`);
+    let xirmooyinkaAnfac = prompt(`Fadlan dooro xirmo\n1. Xirmo USD1\n2. Xirmo USD5\n3. Xirmo USD10\n4. Xirmo USD20\n5. Xirmo USD50\n6. Xirmo 90 Sinti\n7. Xirmo 50 Sinti\n0. Back Next:99`);
     // xirmo1
     checkxirmo()
     function checkxirmo() 
@@ -704,12 +808,18 @@ function anfacXirmoyin()
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
             }
+            else if(permisionDialog == null){
+        
+            }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
             }
         }
         else if(xirmooyinkaAnfac == ""){
             alert('Input required.Try again. ')
+        }
+        else if(xirmooyinkaAnfac == null){
+        
         }
         // xirmo2
         else if (xirmooyinkaAnfac == "2")
@@ -731,6 +841,9 @@ function anfacXirmoyin()
             }
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
+            }
+            else if(permisionDialog == null){
+        
             }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
@@ -756,6 +869,9 @@ function anfacXirmoyin()
             }
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
+            }
+            else if(permisionDialog == null){
+        
             }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
@@ -783,6 +899,9 @@ function anfacXirmoyin()
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
             }
+            else if(permisionDialog == null){
+        
+            }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
             }
@@ -806,6 +925,9 @@ function anfacXirmoyin()
             }
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
+            }
+            else if(permisionDialog == null){
+        
             }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
@@ -832,6 +954,9 @@ function anfacXirmoyin()
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
             }
+            else if(permisionDialog == null){
+        
+            }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
             }
@@ -857,13 +982,70 @@ function anfacXirmoyin()
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
             }
+            else if(permisionDialog == null){
+        
+            }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
             }
         }
-    
-        else if(xirmooyinkaAnfac == "8")
+
+        else if(xirmooyinkaAnfac == '99')
         {
+            xirmooyinkaAnfac = prompt(`8.Xirmo 10 sinti\n0.Back Pre:88`);
+            if(xirmooyinkaAnfac == '8')
+            {
+                let permisionDialog = prompt(`Waxaad heleysaa 8 daqiiqo wicitaan gudaha. Fadlan hubi isdiiwaangelintaada:\n1. Maya \n2. Haa`);
+                if(permisionDialog == ""){
+                    alert('Input required.Try again. ')
+                }
+                else if (permisionDialog == 2 && userBalance >= 0.1){
+                    userBalance -= 0.1;
+                    alert(`Waad ku guuleysatey isdiiwaangelintaada haraagaagu   waa $ ${userBalance}`);
+                }
+                else if(permisionDialog == 2 && userBalance <0.1){
+                    alert(`Haraaga xisaabtaada kuguma filna.`);
+                }
+                else if (permisionDialog == 2 && userBalance <=0){
+                    alert(`Haraaga xisaabtaada kuguma filna.`);
+                }
+                else if(permisionDialog == "1"){
+                    alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
+                }
+                else if(permisionDialog == null){
+            
+                }
+                else {
+                    alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
+                }
+            }
+            else if(xirmooyinkaAnfac == '0'){
+                anfacparts();
+            }
+            else if(xirmooyinkaAnfac == '88'){
+                anfacXirmoyin();
+            }
+            else if(xirmooyinkaAnfac == null){
+                
+            }
+            else if(xirmooyinkaAnfac == ''){
+                alert('Input required.Try again. ');
+            }
+            else{
+                checkxirmo();
+                
+            }
+
+
+        }
+    
+    
+        // back to anfac options
+        else if(xirmooyinkaAnfac == "0")
+        {
+            anfacparts();
+        }
+        else if(xirmooyinkaAnfac == '8'){
             let permisionDialog = prompt(`Waxaad heleysaa 8 daqiiqo wicitaan gudaha. Fadlan hubi isdiiwaangelintaada:\n1. Maya \n2. Haa`);
             if(permisionDialog == ""){
                 alert('Input required.Try again. ')
@@ -881,15 +1063,12 @@ function anfacXirmoyin()
             else if(permisionDialog == "1"){
                 alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
             }
+            else if(permisionDialog == null){
+        
+            }
             else {
                 alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
             }
-        }
-    
-        // back to anfac options
-        else if(xirmooyinkaAnfac == "0")
-        {
-            anfacparts();
         }
         else{
             while(xirmooyinkaAnfac !='0' || xirmooyinkaAnfac !='1' || xirmooyinkaAnfac !='2' || xirmooyinkaAnfac !='3' || xirmooyinkaAnfac !='4' || xirmooyinkaAnfac !='5' || xirmooyinkaAnfac !='6' || xirmooyinkaAnfac !='7' || xirmooyinkaAnfac !='8'){
@@ -898,8 +1077,12 @@ function anfacXirmoyin()
                     alert('Input required.Try again. ');
                     break;
                 }
+                else if(xirmooyinkaAnfac == null){
+        
+                }
                 else {
-                    checkxirmo()
+                    checkxirmo();
+                    break
                 }
             }
 
