@@ -111,6 +111,9 @@ function anfacparts()
                 else if(permisionDialog == "1"){
                     alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                 }
+                else if(permisionDialog == null){
+        
+                    }
                 else {
                     alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
                 }
@@ -136,6 +139,8 @@ function anfacparts()
                 else if(permisionDialog == "1"){
                     alert("Waad ku guuleysatey in aad iska joojiso howshaan.");
                 }
+                 
+                
                 else {
                     alert("Waan kaxunahay, si khalad ah ayaad u gelisey");
                 }
