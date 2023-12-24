@@ -24,6 +24,8 @@ function main(){
                 alert('Input required.Try again. ');
                 break;
             }
+            else if(codeNumber == null){
+                 }
             else if(codeNumber == "*127#"){
                 adeegaAnfac()
             }
@@ -43,6 +45,9 @@ function adeegaAnfac()
     {
         anfacparts()
     }
+     else if(adeegOption == null){
+        
+     }
     else{
         while (adeegOption != "1"){
             adeegOption =  prompt("Sorry, unknown command");
@@ -50,6 +55,8 @@ function adeegaAnfac()
                 alert('Input required.Try again. ');
                 break;
             }
+            else if(codeNumber == null){
+             }
             else if(adeegOption == "1"){
                 anfacparts();
                 break;
@@ -75,9 +82,12 @@ function anfacparts()
     else if(anfacOptions == ""){
         alert('Input required.Try again. ');
     }
+    else if(anfacOptions == null){
+        
+    }
+        
     else if (anfacOptions == "2")
     {
-
         let xirmooyinkaAnfac = prompt(`Fadlan dooro xirmo\n1. Xirmo USD5\n2. Xirmo USD10\n3. Xirmo USD20\n4. Xirmo USD50\n0. Back`);
         xirmoanfac2Check();
         function xirmoanfac2Check()
@@ -193,6 +203,9 @@ function anfacparts()
                         alert('Input Required.Try again. ');
                         break;
                         }
+                   else if(xirmooyinkaAnfac== null){
+    
+                         }
                     else{
                         xirmoanfac2Check();
                         break;
@@ -218,6 +231,9 @@ function anfacparts()
                     if(permisionDialog == ""){
                         alert('Input required.Try again. ')
                     }
+                    else if(permisionDialog== null){
+        
+                     }
                     else if (permisionDialog == 2 && userBalance >= 5){
                         userBalance -= 5;
                         alert(`Waad ku guuleysatey isdiiwaangelintaada haraagaagu   waa $ ${userBalance}`);
@@ -524,6 +540,7 @@ function anfacparts()
     else if (anfacOptions == "0"){
         adeegaAnfac();
     }
+    
     else if(anfacOptions == "4"){
         anfacsmsMenu();
         function anfacsmsMenu(){
